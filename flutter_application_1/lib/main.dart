@@ -19,12 +19,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
-          color: Colors.red,
-        )
-      ),
+          child: Container(
+        height: 300,
+        width: 300,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("rasm/1.jpg"), fit: BoxFit.cover),
+            borderRadius: BorderRadius.all(Radius.circular(10))),
+      )),
     );
   }
 }
