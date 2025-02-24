@@ -19,7 +19,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("hayr"),
+        child: Container(
+          height: 300,
+          width: 300,
+          color: Colors.red,
+        )
       ),
     );
   }
